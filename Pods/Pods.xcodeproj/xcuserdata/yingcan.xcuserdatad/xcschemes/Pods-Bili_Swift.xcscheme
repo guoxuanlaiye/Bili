@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D06093A1E136A7C00E1C311"
-               BuildableName = "Bili_Swift.app"
-               BlueprintName = "Bili_Swift"
-               ReferencedContainer = "container:Bili_Swift.xcodeproj">
+               BlueprintIdentifier = "1FFE60344D8C539286A3B80685585DB7"
+               BuildableName = "Pods_Bili_Swift.framework"
+               BlueprintName = "Pods-Bili_Swift"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D06093A1E136A7C00E1C311"
-            BuildableName = "Bili_Swift.app"
-            BlueprintName = "Bili_Swift"
-            ReferencedContainer = "container:Bili_Swift.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D06093A1E136A7C00E1C311"
-            BuildableName = "Bili_Swift.app"
-            BlueprintName = "Bili_Swift"
-            ReferencedContainer = "container:Bili_Swift.xcodeproj">
+            BlueprintIdentifier = "1FFE60344D8C539286A3B80685585DB7"
+            BuildableName = "Pods_Bili_Swift.framework"
+            BlueprintName = "Pods-Bili_Swift"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D06093A1E136A7C00E1C311"
-            BuildableName = "Bili_Swift.app"
-            BlueprintName = "Bili_Swift"
-            ReferencedContainer = "container:Bili_Swift.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

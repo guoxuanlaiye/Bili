@@ -12,9 +12,22 @@
 		4D0609441E136A7C00E1C311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0609421E136A7C00E1C311 /* Main.storyboard */; };
 		4D0609461E136A7C00E1C311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0609451E136A7C00E1C311 /* Assets.xcassets */; };
 		4D0609491E136A7C00E1C311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0609471E136A7C00E1C311 /* LaunchScreen.storyboard */; };
+		4D0609571E136B5D00E1C311 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0609561E136B5D00E1C311 /* HomeViewController.swift */; };
+		4D0609591E136B8D00E1C311 /* PartitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0609581E136B8D00E1C311 /* PartitionViewController.swift */; };
+		4D06095B1E136BA200E1C311 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D06095A1E136BA200E1C311 /* DiscoverViewController.swift */; };
+		4D06095D1E136BB000E1C311 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D06095C1E136BB000E1C311 /* ProfileViewController.swift */; };
+		4D0609601E136C3800E1C311 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D06095F1E136C3800E1C311 /* MainTabBarViewController.swift */; };
+		4D0609621E136C5600E1C311 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0609611E136C5600E1C311 /* MainNavigationViewController.swift */; };
+		4D6C951B1E13956500BE609C /* GXNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C951A1E13956500BE609C /* GXNetworkTool.swift */; };
+		4D6C951E1E139B9500BE609C /* ServiceURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C951D1E139B9500BE609C /* ServiceURL.swift */; };
+		4D6C95231E13C28000BE609C /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C95211E13C28000BE609C /* HomeViewCell.swift */; };
+		4D6C95241E13C28000BE609C /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6C95221E13C28000BE609C /* HomeViewCell.xib */; };
+		4D6C95291E13C94C00BE609C /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C95281E13C94C00BE609C /* ItemModel.swift */; };
+		C87310E4521A17C39A94B6DC /* Pods_Bili_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BC77C997EE74B6014A5B2E /* Pods_Bili_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47BC77C997EE74B6014A5B2E /* Pods_Bili_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bili_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D06093B1E136A7C00E1C311 /* Bili_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bili_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D06093E1E136A7C00E1C311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D0609401E136A7C00E1C311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,19 @@
 		4D0609451E136A7C00E1C311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D0609481E136A7C00E1C311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D06094A1E136A7C00E1C311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0609561E136B5D00E1C311 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4D0609581E136B8D00E1C311 /* PartitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartitionViewController.swift; sourceTree = "<group>"; };
+		4D06095A1E136BA200E1C311 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		4D06095C1E136BB000E1C311 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4D06095F1E136C3800E1C311 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		4D0609611E136C5600E1C311 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		4D6C951A1E13956500BE609C /* GXNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GXNetworkTool.swift; sourceTree = "<group>"; };
+		4D6C951D1E139B9500BE609C /* ServiceURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceURL.swift; sourceTree = "<group>"; };
+		4D6C95211E13C28000BE609C /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		4D6C95221E13C28000BE609C /* HomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		4D6C95281E13C94C00BE609C /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		6BBF15F1149ACEDB13DFB0A1 /* Pods-Bili_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bili_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bili_Swift/Pods-Bili_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		89AB80D40D5A2380D8365EB2 /* Pods-Bili_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bili_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bili_Swift/Pods-Bili_Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C87310E4521A17C39A94B6DC /* Pods_Bili_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12CFA02CF49F4072063A9635 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47BC77C997EE74B6014A5B2E /* Pods_Bili_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D0609321E136A7C00E1C311 = {
 			isa = PBXGroup;
 			children = (
 				4D06093D1E136A7C00E1C311 /* Bili_Swift */,
 				4D06093C1E136A7C00E1C311 /* Products */,
+				B813AB679418A89EE04ACDAE /* Pods */,
+				12CFA02CF49F4072063A9635 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +91,16 @@
 		4D06093D1E136A7C00E1C311 /* Bili_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				4D6C95251E13C69700BE609C /* Model */,
+				4D6C951F1E13C25C00BE609C /* CustomCell */,
+				4D6C951C1E139B7900BE609C /* ServiceURL */,
+				4D06095E1E136C0E00E1C311 /* Tools */,
+				4D0609551E136B3500E1C311 /* Me */,
+				4D0609541E136B2000E1C311 /* Discover */,
+				4D0609531E136AFB00E1C311 /* Section */,
+				4D0609521E136AC400E1C311 /* Home */,
+				4D0609511E136AB600E1C311 /* Network */,
+				4D0609501E136A9B00E1C311 /* Main */,
 				4D06093E1E136A7C00E1C311 /* AppDelegate.swift */,
 				4D0609401E136A7C00E1C311 /* ViewController.swift */,
 				4D0609421E136A7C00E1C311 /* Main.storyboard */,
@@ -64,6 +111,104 @@
 			path = Bili_Swift;
 			sourceTree = "<group>";
 		};
+		4D0609501E136A9B00E1C311 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4D06095F1E136C3800E1C311 /* MainTabBarViewController.swift */,
+				4D0609611E136C5600E1C311 /* MainNavigationViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4D0609511E136AB600E1C311 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4D6C951A1E13956500BE609C /* GXNetworkTool.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4D0609521E136AC400E1C311 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4D0609561E136B5D00E1C311 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4D0609531E136AFB00E1C311 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				4D0609581E136B8D00E1C311 /* PartitionViewController.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		4D0609541E136B2000E1C311 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				4D06095A1E136BA200E1C311 /* DiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		4D0609551E136B3500E1C311 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				4D06095C1E136BB000E1C311 /* ProfileViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		4D06095E1E136C0E00E1C311 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4D6C951C1E139B7900BE609C /* ServiceURL */ = {
+			isa = PBXGroup;
+			children = (
+				4D6C951D1E139B9500BE609C /* ServiceURL.swift */,
+			);
+			path = ServiceURL;
+			sourceTree = "<group>";
+		};
+		4D6C951F1E13C25C00BE609C /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D6C95201E13C26900BE609C /* HomeCell */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		4D6C95201E13C26900BE609C /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D6C95211E13C28000BE609C /* HomeViewCell.swift */,
+				4D6C95221E13C28000BE609C /* HomeViewCell.xib */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		4D6C95251E13C69700BE609C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D6C95281E13C94C00BE609C /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B813AB679418A89EE04ACDAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BBF15F1149ACEDB13DFB0A1 /* Pods-Bili_Swift.debug.xcconfig */,
+				89AB80D40D5A2380D8365EB2 /* Pods-Bili_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D06094D1E136A7C00E1C311 /* Build configuration list for PBXNativeTarget "Bili_Swift" */;
 			buildPhases = (
+				003FB4BC1D8076EE13F04F24 /* [CP] Check Pods Manifest.lock */,
 				4D0609371E136A7C00E1C311 /* Sources */,
 				4D0609381E136A7C00E1C311 /* Frameworks */,
 				4D0609391E136A7C00E1C311 /* Resources */,
+				FB20E10874149957FFA04A04 /* [CP] Embed Pods Frameworks */,
+				98C855DE5B08695718A1FA3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D0609491E136A7C00E1C311 /* LaunchScreen.storyboard in Resources */,
+				4D6C95241E13C28000BE609C /* HomeViewCell.xib in Resources */,
 				4D0609461E136A7C00E1C311 /* Assets.xcassets in Resources */,
 				4D0609441E136A7C00E1C311 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +280,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		003FB4BC1D8076EE13F04F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		98C855DE5B08695718A1FA3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bili_Swift/Pods-Bili_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB20E10874149957FFA04A04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bili_Swift/Pods-Bili_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D0609371E136A7C00E1C311 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D06095D1E136BB000E1C311 /* ProfileViewController.swift in Sources */,
 				4D0609411E136A7C00E1C311 /* ViewController.swift in Sources */,
+				4D6C951B1E13956500BE609C /* GXNetworkTool.swift in Sources */,
+				4D6C951E1E139B9500BE609C /* ServiceURL.swift in Sources */,
+				4D0609591E136B8D00E1C311 /* PartitionViewController.swift in Sources */,
+				4D6C95231E13C28000BE609C /* HomeViewCell.swift in Sources */,
+				4D6C95291E13C94C00BE609C /* ItemModel.swift in Sources */,
+				4D0609601E136C3800E1C311 /* MainTabBarViewController.swift in Sources */,
 				4D06093F1E136A7C00E1C311 /* AppDelegate.swift in Sources */,
+				4D0609621E136C5600E1C311 /* MainNavigationViewController.swift in Sources */,
+				4D0609571E136B5D00E1C311 /* HomeViewController.swift in Sources */,
+				4D06095B1E136BA200E1C311 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +463,7 @@
 		};
 		4D06094E1E136A7C00E1C311 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBF15F1149ACEDB13DFB0A1 /* Pods-Bili_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bili_Swift/Info.plist;
@@ -268,6 +476,7 @@
 		};
 		4D06094F1E136A7C00E1C311 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89AB80D40D5A2380D8365EB2 /* Pods-Bili_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bili_Swift/Info.plist;
@@ -297,6 +506,7 @@
 				4D06094F1E136A7C00E1C311 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

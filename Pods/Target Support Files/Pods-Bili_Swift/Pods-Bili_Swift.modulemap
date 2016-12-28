@@ -1,0 +1,6 @@
+framework module Pods_Bili_Swift {
+  umbrella header "Pods-Bili_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
