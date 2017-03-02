@@ -14,7 +14,8 @@ class MainNavigationViewController: UINavigationController {
         super.viewDidLoad()
         
     }
-
+    
+    
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         
         if self.childViewControllers.count > 0 {

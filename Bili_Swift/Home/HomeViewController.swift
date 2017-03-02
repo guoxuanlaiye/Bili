@@ -9,7 +9,13 @@
 import UIKit
 import Alamofire
 
+fileprivate let HomeCellID   = "HomeViewCellID"
+fileprivate let HomeHeaderID = "HomeHeaderViewID"
+fileprivate let HomeFooterID = "HomeFooterViewID"
+
 class HomeViewController: UIViewController{
+
+    fileprivate lazy var dataArray : [RecomModel] = [RecomModel]()
 
     fileprivate lazy var myLayout:UICollectionViewFlowLayout = {
     
@@ -28,7 +34,7 @@ class HomeViewController: UIViewController{
         let frame = CGRect.init(x: 0, y: 0, width: ScreenW, height: ScreenH)
         
         let homeCollect = UICollectionView.init(frame: frame, collectionViewLayout:(self?.myLayout)!)
-        homeCollect.backgroundColor = UIColor.orange
+        homeCollect.backgroundColor = UIColor.white
         homeCollect.delegate   = self
         homeCollect.dataSource = self
         
@@ -47,8 +53,11 @@ class HomeViewController: UIViewController{
     }
 
     private func registerCell() {
-        
-        homeCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        //       collectionView.registerClass(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "headView")
+        homeCollectionView.register(UINib.init(nibName: "HomeViewCell", bundle: nil), forCellWithReuseIdentifier: HomeCellID)
+        homeCollectionView.register(UINib.init(nibName: "HomeHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: HomeHeaderID)
+        homeCollectionView.register(UINib.init(nibName: "HomeFooterView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: HomeFooterID)
+
     }
     private func setupView() {
         
@@ -58,6 +67,16 @@ class HomeViewController: UIViewController{
     
         GXNetworkTool.requestData(url: Home_RecomlistURL, successCallback: { (result) in
         
+            guard let resultDict = result as? [String:NSObject] else {return}
+            
+            guard let dataSource = resultDict["data"] as? [[String:NSObject]] else {return}
+            
+            for dic in dataSource {
+            
+                let model = RecomModel(dict:dic)
+                self.dataArray.append(model)
+            }
+            self.homeCollectionView.reloadData()
             
         }) { (error) in
         
@@ -77,17 +96,53 @@ extension HomeViewController:UICollectionViewDataSource {
    
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int{
-        return 3
+        return 1
     }
     /// MARK --- 返回分区中cell的个数
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 6
+        
+        if self.dataArray.count == 0 {
+            return 1
+        }
+        let headitme = self.dataArray[0]
+        return headitme.Bodys.count
     }
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = UIColor.white
-        return cell;
+            
+        let homeCell  = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCellID, for: indexPath) as! HomeViewCell
+        if self.dataArray.count > 0 {
+            let headitme  = self.dataArray[indexPath.section]
+            let body      = headitme.Bodys
+            homeCell.body = body[indexPath.item]
+        }
+        
+        return homeCell
     }
-
+    
+//    public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//        
+//        if kind == UICollectionElementKindSectionHeader { //页眉
+//        
+//            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HomeHeaderViewID", for: indexPath) as! HomeHeaderView
+//            return headerView
+//            
+//        } else { //页脚
+//            
+//            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "HomeFooterViewID", for: indexPath) as! HomeFooterView
+//            return footerView
+//            
+//        }
+//    }
 }
+
+//extension HomeViewController:UICollectionViewDelegateFlowLayout {
+//    //页眉size
+//    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+//        return CGSize.init(width: self.view.frame.size.width, height: 60)
+//    }
+//    //页脚size
+//    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+//        return CGSize.init(width: self.view.frame.size.width, height: 60)
+//    }
+//}
+

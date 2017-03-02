@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewCell: UICollectionViewCell {
 
@@ -18,4 +19,20 @@ class HomeViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
 
+    var body : ItemModel? {
+    
+        didSet {
+        
+            let coverUrl:String = (body?.cover)!
+            let url             = URL.init(string: coverUrl)
+            self.faceImageV.kf.setImage(with: url)
+            self.titleLab.text  = body?.title
+            
+            
+        
+        }
+        
+    }
+    
+    
 }

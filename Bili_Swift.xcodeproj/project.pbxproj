@@ -23,6 +23,11 @@
 		4D6C95231E13C28000BE609C /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C95211E13C28000BE609C /* HomeViewCell.swift */; };
 		4D6C95241E13C28000BE609C /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6C95221E13C28000BE609C /* HomeViewCell.xib */; };
 		4D6C95291E13C94C00BE609C /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C95281E13C94C00BE609C /* ItemModel.swift */; };
+		4DF066561E1F2E3900E44ED5 /* GXFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF066551E1F2E3900E44ED5 /* GXFPSLabel.swift */; };
+		4DF066591E1F3E3A00E44ED5 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF066571E1F3E3A00E44ED5 /* HomeHeaderView.swift */; };
+		4DF0665A1E1F3E3A00E44ED5 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF066581E1F3E3A00E44ED5 /* HomeHeaderView.xib */; };
+		4DF0665D1E1F406A00E44ED5 /* HomeFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0665B1E1F406A00E44ED5 /* HomeFooterView.swift */; };
+		4DF0665E1E1F406A00E44ED5 /* HomeFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0665C1E1F406A00E44ED5 /* HomeFooterView.xib */; };
 		C87310E4521A17C39A94B6DC /* Pods_Bili_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BC77C997EE74B6014A5B2E /* Pods_Bili_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +51,11 @@
 		4D6C95211E13C28000BE609C /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		4D6C95221E13C28000BE609C /* HomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
 		4D6C95281E13C94C00BE609C /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		4DF066551E1F2E3900E44ED5 /* GXFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GXFPSLabel.swift; sourceTree = "<group>"; };
+		4DF066571E1F3E3A00E44ED5 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		4DF066581E1F3E3A00E44ED5 /* HomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
+		4DF0665B1E1F406A00E44ED5 /* HomeFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFooterView.swift; sourceTree = "<group>"; };
+		4DF0665C1E1F406A00E44ED5 /* HomeFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeFooterView.xib; sourceTree = "<group>"; };
 		6BBF15F1149ACEDB13DFB0A1 /* Pods-Bili_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bili_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bili_Swift/Pods-Bili_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		89AB80D40D5A2380D8365EB2 /* Pods-Bili_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bili_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bili_Swift/Pods-Bili_Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +173,7 @@
 		4D06095E1E136C0E00E1C311 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				4DF066551E1F2E3900E44ED5 /* GXFPSLabel.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -188,6 +199,10 @@
 			children = (
 				4D6C95211E13C28000BE609C /* HomeViewCell.swift */,
 				4D6C95221E13C28000BE609C /* HomeViewCell.xib */,
+				4DF066571E1F3E3A00E44ED5 /* HomeHeaderView.swift */,
+				4DF066581E1F3E3A00E44ED5 /* HomeHeaderView.xib */,
+				4DF0665B1E1F406A00E44ED5 /* HomeFooterView.swift */,
+				4DF0665C1E1F406A00E44ED5 /* HomeFooterView.xib */,
 			);
 			path = HomeCell;
 			sourceTree = "<group>";
@@ -271,7 +286,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF0665E1E1F406A00E44ED5 /* HomeFooterView.xib in Resources */,
 				4D0609491E136A7C00E1C311 /* LaunchScreen.storyboard in Resources */,
+				4DF0665A1E1F3E3A00E44ED5 /* HomeHeaderView.xib in Resources */,
 				4D6C95241E13C28000BE609C /* HomeViewCell.xib in Resources */,
 				4D0609461E136A7C00E1C311 /* Assets.xcassets in Resources */,
 				4D0609441E136A7C00E1C311 /* Main.storyboard in Resources */,
@@ -334,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D06095D1E136BB000E1C311 /* ProfileViewController.swift in Sources */,
+				4DF066561E1F2E3900E44ED5 /* GXFPSLabel.swift in Sources */,
 				4D0609411E136A7C00E1C311 /* ViewController.swift in Sources */,
 				4D6C951B1E13956500BE609C /* GXNetworkTool.swift in Sources */,
 				4D6C951E1E139B9500BE609C /* ServiceURL.swift in Sources */,
@@ -344,6 +362,8 @@
 				4D06093F1E136A7C00E1C311 /* AppDelegate.swift in Sources */,
 				4D0609621E136C5600E1C311 /* MainNavigationViewController.swift in Sources */,
 				4D0609571E136B5D00E1C311 /* HomeViewController.swift in Sources */,
+				4DF0665D1E1F406A00E44ED5 /* HomeFooterView.swift in Sources */,
+				4DF066591E1F3E3A00E44ED5 /* HomeHeaderView.swift in Sources */,
 				4D06095B1E136BA200E1C311 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = mainTabBarVC
         self.window?.makeKeyAndVisible()
         
+        let FPSLab = GXFPSLabel(frame: CGRect())
+        self.window?.addSubview(FPSLab)
+        
         return true
     }
 

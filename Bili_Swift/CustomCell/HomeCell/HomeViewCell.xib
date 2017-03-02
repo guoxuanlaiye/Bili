@@ -20,13 +20,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qIe-A5-vZf">
-                        <rect key="frame" x="0.0" y="0.0" width="136" height="82"/>
+                        <rect key="frame" x="0.0" y="0.0" width="136" height="102"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="qIe-A5-vZf" secondAttribute="height" multiplier="5:3" id="oc1-CU-oGP"/>
+                            <constraint firstAttribute="width" secondItem="qIe-A5-vZf" secondAttribute="height" multiplier="4:3" id="oc1-CU-oGP"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱上简单的第四殴打死的怒放你的发送到放到都是" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-rL-Qy8">
-                        <rect key="frame" x="0.0" y="82" width="136" height="31.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-rL-Qy8">
+                        <rect key="frame" x="0.0" y="124" width="136" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -37,16 +37,16 @@
                 <constraint firstAttribute="trailing" secondItem="iFf-rL-Qy8" secondAttribute="trailing" id="7ah-m6-v8P"/>
                 <constraint firstItem="qIe-A5-vZf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IAF-mX-ZK6"/>
                 <constraint firstItem="qIe-A5-vZf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NfT-sC-WM0"/>
+                <constraint firstAttribute="bottom" secondItem="iFf-rL-Qy8" secondAttribute="bottom" id="Nyp-Lt-ede"/>
                 <constraint firstAttribute="trailing" secondItem="qIe-A5-vZf" secondAttribute="trailing" id="jc6-2G-fAg"/>
                 <constraint firstItem="iFf-rL-Qy8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qNj-XB-eXx"/>
-                <constraint firstItem="iFf-rL-Qy8" firstAttribute="top" secondItem="qIe-A5-vZf" secondAttribute="bottom" id="rox-ON-fpM"/>
             </constraints>
             <size key="customSize" width="136" height="124"/>
             <connections>
                 <outlet property="faceImageV" destination="qIe-A5-vZf" id="YEl-JO-ygV"/>
                 <outlet property="titleLab" destination="iFf-rL-Qy8" id="BzJ-S3-RcQ"/>
             </connections>
-            <point key="canvasLocation" x="-236" y="-124"/>
+            <point key="canvasLocation" x="-500" y="-175"/>
         </collectionViewCell>
     </objects>
 </document>
